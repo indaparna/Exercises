@@ -1,0 +1,42 @@
+<!Doctype>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS</title>
+	<script>
+		var Employees=[{Name:"Aparna",DOB:"14-03-98",Age:21,Salary:8000},
+		{Name:"Ayush",DOB:"28-02-96",Age:23,Salary:4000},
+		{Name:"Amrit",DOB:"06-06-98",Age:21,Salary:500},
+		{Name:"Tuhin",DOB:"30-09-97",Age:22,Salary:800},
+		{Name:"Shivani",DOB:"20-08-97",Age:22,Salary:2200},
+		{Name:"Abhishek",DOB:"10-03-95",Age:24,Salary:7700},
+		{Name:"Nidhi",DOB:"20-08-97",Age:22,Salary:5500},
+		{Name:"Lucy",DOB:"20-07-96",Age:23,Salary:1200}];
+
+		/*for(var i=0;i<Employees.length;i++){
+			if( Employees[i].Salary>5000){
+				console.log(Employees[i].Name+":"+Employees[i].Salary);
+			}
+		}
+		for(var group=21;group<25;group++){
+			console.log("age group of"+group);
+			for(var i=0;i<Employees.length;i++){
+			if(group==Employees[i].Age){
+				console.log(Employees[i].Name);
+			}
+		}
+		console.log("");
+		}*/
+		console.log("If Salary is less than 1000 and Age is greater than 20	, So new Salary is : ");
+		for(var i=0;i < Employees.length;i++){
+		if(Employees[i].Salary < 1000 && Employees[i].Age > 20){
+			console.log(Employees[i].Name +" and her/his new salary is "+ Employees[i].Salary*5);
+		}
+	
+	}
+	</script>
+</head>
+<body>
+	<h3>Question 5</h3>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!Doctype>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS</title>
+	<script>
+		flag=1;
+		var str=prompt("Enter String");
+		var forward=0 ,backward=str.length-1;
+		for(;forward<str.lenght/2;forward++,backward--){
+			if(str[forward] !== str[backward]){
+				flag=0;
+				break;
+			}
+		}
+		if(flag==0){
+			alert("Not Palindrome");
+		}else{
+			alert("Palindrome");
+		}
+	</script>
+</head>
+<body>
+	<h3>Palindrome</h3>
+</body>
+</html>
