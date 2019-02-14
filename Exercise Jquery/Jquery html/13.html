@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+  	$("div").each(function(){
+    alert("Height of div: " + $("div").css("max-height"));
+  });
+});
+});
+</script>
+</script>
+</head>
+<body>
+<div style="max-width: 200px; max-height: 150px;overflow: auto;">
+  <span>Apples</span><br/>
+  <span>Oranges</span><br/>
+  <span>Grapes</span><br/>
+  <span>Water Melons</span><br/>
+</div>
+<button>click me</button>
+
+
+</body>
+</html>

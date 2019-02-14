@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Question 16
+	</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$.get( "https://jsonplaceholder.typicode.com/posts?userId=1", function(list) {
+				var data; var row = [];
+ 				for(var i=0; i<list.length; i++){
+ 				row=list[i];
+ 				data+="<tr><td>"+row["userId"]+"</td><td>"+row["id"]+"</td><td>"+row["title"]+"</td><td>"+row["body"]+"</td><td>"+
+ 				"<button class='delete' id="+i+">X</button></td></tr>";
+ 				}
+ 				$("table").append(data);
+				alert( "Data loaded succfully.");
+			});
+
+			$(document).on("click",".delete",function(){
+				$("#"+$(this).attr('id')).parent().parent().remove();
+				
+ 			});
+
+			
+		});
+	</script>
+</head>
+<body>
+<table border="1px solid black">
+	<tr>
+		<th>User ID</th>
+		<th>ID</th>
+		<th>Title</th>
+		<th>Body</th>
+		<th>Action</th>
+	</tr>
+</table>
+</body>
+</html>

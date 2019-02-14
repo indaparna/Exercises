@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+			var arr=$("td");
+			for(var i=0; i<arr.length; i++){
+
+				if(parseInt((arr[i]).textContent)>10)
+					$(arr[i]).css("background-color","yellow");
+			}
+		});
+</script>
+</head>
+<body>
+	<table border= "1px solid black"><tr>
+		<th>Key</th>
+		<th>Value</th>
+	</tr>
+	<tr>
+		<td>a</td>
+		<td>10</td>
+	</tr>
+	<tr>
+		<td>b</td>
+		<td>9</td>
+	</tr>
+	<tr>
+		<td>c</td>
+		<td>15</td>
+	</tr>
+	</table>
+	
+</body>
+</html>

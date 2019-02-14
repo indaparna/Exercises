@@ -1,0 +1,18 @@
+<!Doctype html>
+<head>
+	<title>JQuery</title>
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(document).on("click","button",function(){
+				var btn=$("<button>click</button><br/><br/> ");
+				($(this).parent()).append(btn);})
+			});
+			
+	</script>
+</head>
+<body>
+	<h2>question 8</h2>
+	<button >Click Here</button>
+</body>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Question 15
+	</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$.get( 'https://jsonplaceholder.typicode.com/todos/1', function(data) {
+ 			$("#result").html(JSON.stringify(data));
+  			alert( "Data loaded succfully.");
+			});
+		});
+	</script>
+</head>
+<body>
+<h2>Data will be loaded here in JSON format</h2>
+<div id="result"></div>
+</body>
+</html>
