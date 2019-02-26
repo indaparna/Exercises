@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Insert Form Data</title>
+    <style>
+        #login{
+            width:300px;
+            border-radius: 10px;
+            border: 2px solid #ccc;
+            padding: 10px 40px 25px;
+            margin-top: 15%;
+            margin-left: 35%;
+        }
+        input[type=text],input[type=email],input[type=number]{
+            width: 99.5%;
+            padding: 10px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            font-family: raleway;
+            background-color: #042339;
+            border-radius: 8px;
+            border: 2px solid #042339;
+            color: white;
+        }
+        input[type=submit]{
+            width: 100%;
+            background-color: #0A3450;
+            color: white;
+            border: 2px solid #0A3450;
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 8px;
+            margin-bottom: -12px;
+        }
+        input[type="submit"]:hover{
+            border-color: #071164;
+            background-color: #071164;
+        } 
+        input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none;
+            margin: 0;
+        }
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+    </style> 
+</head>
+<body style="background-color: #061D2D">
+    <div id="login">
+    <form action="./ques2b.php" method="POST" onsubmit="return checkform()">
+    <input type="text" name="first_name" id="first_name" placeholder="First name"  autocomplete="off">
+    <input type="text" name="last_name" id="last_name" placeholder="Last name"  autocomplete="off">
+    <input type="text" name="email" id="email" placeholder="Email" autocomplete="off">
+    <input type="number" name="phone" id="phone" placeholder="Phone number" maxlength="10" autocomplete="off">
+    <input type="submit" value="Search" name="submit">
+</div>
+</form>
+</body>
+</html>
