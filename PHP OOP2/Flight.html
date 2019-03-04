@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .logo{
+                float: left;
+                margin-top: 8px;
+                width: 100px;
+                height: 80px;
+            }
+            #div1{
+                background-color: #E5E7E9;
+                width:50%;
+                height:100px;
+                margin-left: 22%; 
+            }
+            div{
+                width:70%;
+                margin-left: 15%;    
+            }
+            
+            input[type=date]::-webkit-inner-spin-button{
+                -webkit-appearance: none;
+                display: none;
+            }
+            input[type=number]::-webkit-inner-spin-button{
+                -webkit-appearance: none;
+                display: none;
+            }
+            input{
+                outline: none;
+            }
+            input[type=text],input[type=number]{
+                width:150px;
+                border-radius: 10px;
+                border: 2px solid #ccc;
+                padding: 10px ;
+                margin-top: 2%;
+                margin-left: 15%;
+            }
+            .menu{
+                width:150px;
+                border-radius: 10px;
+                border: 2px solid #ccc;
+                padding: 10px ;
+                margin-top: 2%;
+                margin-left: 15%;
+            }
+           
+            input[type=date]{
+                width:50px;
+                border-radius: 10px;
+                border: 2px solid #ccc;
+                padding: 10px ;
+                margin-top: 2%;
+                margin-left: 2%;
+
+            }
+            input[type=submit]{
+                width:150px;
+                border-radius: 10px;
+                border: 2px solid #ccc;
+                padding: 10px ;
+                margin-top: 2%; 
+            }
+            
+        </style>
+    </head>
+    <body>
+        <form action= "flight.php" method="POST" style="margin-top:5%;">
+            <div id="div1">
+                <img src="logo.jpg" alt="Logo" class="logo">
+            </div>
+
+            <div style="margin-top:5%;">
+                <input type="text" name="fromCity" placeholder="From" autocomplete="off"  required>
+               
+                <input type="text" name="toCity" placeholder="To" autocomplete="off" required>
+            </div>
+            <div style="margin-top:5%;">
+                <input type="number" name="people" placeholder="Number of People" autocomplete="off" required>
+                <select class="menu" name="flightname" required style="background-color:rgb(47, 165, 185)">
+                    <option value="AirIndia">Air India</option>
+                    <option value="Indigo">Indigo</option>
+                    <option value="Spice Jet">Spice Jet</option>
+                    <option value="Vistra">Vistara</option>
+                    <option value="Jet Airways">Jet Airways</option>
+                </select>
+            </div>
+            <div class="action" style="margin-top:5%;">
+                <input type="submit" name="checkFlightAvailability" style="margin-left: 24%; background-color: rgb(47, 165, 185)" value="Check Availability">
+                <input type="submit" name="bookFlights" value="Book Flight" style="background-color: rgb(47, 165, 185)">
+            </div>
+        </form>
+    </body>
+</html>

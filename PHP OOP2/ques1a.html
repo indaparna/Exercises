@@ -1,0 +1,45 @@
+<html>
+    <head>
+            <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<style>
+    input[type="file"]::-webkit-file-upload-button{
+        visibility: hidden;
+    }
+    .upload{
+        color: white;
+        font-family: 'Lobster', cursive;
+        margin-left: 5%;
+        outline : none;
+        cursor: pointer;
+    }
+div{
+    width:300px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    padding: 10px 40px 25px;
+    margin-top: 15%;
+    margin-left: 35%;
+}
+.submit{
+    border-radius: 5px;
+    border: 0;
+    width: 80px;
+    height:25px;
+    font-family: 'Lobster',cursive;
+    margin-top: 10%;
+    margin-left: 33%;
+
+}
+</style>
+    </head>
+    <body background="bg.jpg">
+        <div>
+        <form action="ques1b.php" method="POST" enctype="multipart/form-data">
+            <h1 style="color:white; font-family: 'Lobster', cursive; padding-left: 25%
+        ">Upload File</h1>
+           <input type="file" name="upload" class="upload" >
+           <input type="submit" value="Submit" class="submit">
+        </form>
+        </div>
+    </body>
+</html>
